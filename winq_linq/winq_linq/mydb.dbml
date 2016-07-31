@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="my_db" Class="mydbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=my_db;Integrated Security=True" SettingsObjectName="winq_linq.Properties.Settings" SettingsPropertyName="my_dbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.customer_table" Member="customer_tables">
+    <Type Name="customer_table">
+      <Column Name="customerid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="customername" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="customerage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="customercity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
